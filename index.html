@@ -1,9 +1,202 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+  <style>
+    @media print {
+      body {
+        background-color: #404045;
+      }
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      background-color: #404045;
+      color: white;
+    }
+
+    h1 {
+      margin-block-end: 0.2em;
+    }
+
+    p {
+      margin-block-start: 0.1em;
+    }
+
+    .photo {
+      margin-block-start: 1em;
+      padding-left: 4em;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 10em;
+      height: auto;
+    }
+
+    header {
+      grid-column: 2 / 4;
+    }
+
+    aside {
+      grid-row: 2;
+    }
+
+    .main {
+      grid-column: 2 / 4;
+      grid-row: 2;
+      background-color: white;
+      color: #404045;
+      padding: 10px;
+    }
+
+    footer {
+      grid-row: 3;
+    }
+
+    .rightSkill {
+      text-align: right;
+    }
+
+    .subSkill {
+      font-size: smaller;
+      font-weight: bold;
+    }
+
+    .subDate {
+      font-size: x-small;
+      font-style: italic;
+    }
+  </style>
+</head>
+
 <body>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
+  <div class="photo">
+    <img src="photo.png" />
+  </div>
+  <header>
+    <h1>PRADO Julien</h1>
+    <p>
+      35ans<br>
+      25 rue des laboureurs<br>
+      56100 LORIENT<br>
+      06 84 58 33 82<br>
+      julien.prado@gmail.com<br>
+      <a href="https://github.com/julien-prado">https://github.com/julien-prado</a><br>
+    </p>
+  </header>
+  <aside>
+    <h2 style="text-align: center;">Compétences</h2>
+    <article>
+      <h1>Langages</h1>
+      <p class="rightSkill">
+        Java, C#, C/C++<br>
+        Javascript/Typescript<br>
+        HTML, CSS<br>
+        SQL<br>
+        WebGl/OpenGl, DirectX, HLSL<br>
+      </p>
+    </article>
+    <article>
+      <h1>Outils</h1>
+      <p class="rightSkill">
+        NodeJS, React, Angular<br>
+        Spring, Maven, Hibernate<br>
+        .Net6, Unity<br>
+        Mongodb, postgreSQL, sqlite<br>
+        visualStudio, VSCode, eclispe<br>
+        Github, SVN, GitLab<br>
+        Docker<br>
+      </p>
+    </article>
+    <article>
+      <h1>Langues</h1>
+      <p class="rightSkill">
+        Français<br>
+        Anglais (courant TOEIC 866)<br>
+        Japonais (Base)<br>
+      </p>
+    </article>
+
+    <h2 style="text-align: center;">Formations</h2>
+    <article>
+      <h1>Master en informatique <span class="subDate">2005-2011</span></h1>
+      <p>Spécialité Images et réseaux à l'Université Bretagne-sud</p>
+      <h1>Apprentissage du japonais <span class="subDate">avril 2014-Septembre 2014</span></h1>
+      <p>A Toushin Japanese language school (Tokyo)</p>
+      <h1>Apprentissage de Unity <span class="subDate">depuis mars 2021</span></h1>
+      <p>à distance https://game.courses/ </p>
+
+    </article>
+    <h2 style="text-align: center;">Passions et loisirs</h2>
+    <article>
+      <p>
+        Cinéma, série TV, jeux vidéo, jeux de rôle,
+        Kendo, jeux de rôle grandeur nature<br>
+      </p>
+    </article>
+  </aside>
+  <section class="main">
+    <h2 style="text-align: center;">Expériences professionnelles & Projets</h2>
+    <article>
+      <h1>Lead Développeur .Net <span class="subDate">(juillet 2021 - janvier 2022)</span></h1>
+      <p>
+        Pour CGI, conception technique, réalisation et encadrement d'alternants sur le projet newPos. d'un back-end
+        dans la. <br>
+        <span class="subSkill">.Net</span>
+
+      </p>
+    </article>
+    <article>
+      <h1>Lead développeur Full/Stack <span class="subDate">(janvier 2018 - juin 2021)</span></h1>
+      <p>
+        Pour Sodifrance, analyse, conception et réalisation sur le projet Electis du Ministère de l'Europe et des
+        Affaires étrangères.<br>
+        <span class="subSkill">Java/Spring/Hibernate, Typescript/React/node, postgreSQL</span>
+      </p>
+    </article>
+    <article>
+      <h1> Développeur Java <span class="subDate">(janvier 2016 - janvier 2018)</span></h1>
+      <p>
+        Pour Sopra Group, conception et réalisation sur le projet du MCO de l'armée Française.<br>
+        <span class="subSkill">Java/Spring/Hibernate, Javascript/AngularJs, xml, REST </span>
+      </p>
+    </article>
+    <article>
+      <h1>Projet bénévole <span class="subDate">(novembre 2015 - janvier 2016 )</span></h1>
+      <p>
+        Conception et réalisation d'un système de gestion de client et de facturation pour TPE.<br>
+        <span class="subSkill">NodeJs, AngularJS, MongoDB</span>
+      </p>
+    </article>
+    <article>
+      <h1>Working-holidays visa <span class="subDate">(mars 2014 - mars 2015)</span></h1>
+      <p>Séjour de découverte et d'apprentissage au Japon.</p>
+    </article>
+    <article>
+      <h1>Développeur Windows <span class="subDate">(janvier 2013 - janvier 2014)</span></h1>
+      <p>
+        Pour Coogeedata à Lorient, conception et réalisation d'applications Windows et WindowsPhone pour la SNCF.<br>
+        <span class="subSkill">C#, .Net4.5, DirectX, Sqlite, Windows8/Windows-phone 8</span>
+      </p>
+    </article>
+    <article>
+      <h1>Consultant en éditique <span class="subDate">(décembre 2011 - mars 2012)</span></h1>
+      <p>
+        Pour la société Docxa à Paris, évolution et maintenance des canaux déditique de AXA. <br>
+        <span class="subSkill">Json,XML/XSLT, Shell script, J2EE, unix</span>
+      </p>
+    </article>
+    <article>
+      <h1>Stagiaire <span class="subDate">(janvier 2011 - juin 2011)</span></h1>
+      <p>
+        Pour Eversim à Lognes, réalisation d'un outil pour le jeu Rulers of nations 2.<br>
+        <span class="subSkill">C++</span>
+      </p>
+    </article>
+  </section>
 </body>
 
 </html>
